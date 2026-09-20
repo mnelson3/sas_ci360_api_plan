@@ -2,7 +2,7 @@
 
 ## Overview
 
-> **Status: superseded.** This library has been replaced by [`sas-ci360-sol-planning`](https://github.com/mnelson3/sas-ci360-sol-planning) — the same Plan API, rebuilt with mockable unit tests, typed exceptions, and safer configuration defaults. This repo is kept for historical reference; start new work in `sas-ci360-sol-planning` instead.
+> **Status: superseded.** This library has been replaced by [`sas-ci360-sol-planning`](https://github.com/mnelson3/sas-ci360-sol-planning) — the same Plan API, rebuilt with mockable unit tests, typed exceptions, and safer configuration defaults. This repo is kept for historical reference; start new work in `sas-ci360-sol-planning` instead. This repo's final implementation is frozen at the `archive/superseded` branch.
 
 The Plan API for SAS Customer Intelligence 360 provides resources for accessing the planning capabilities of SAS 360 Plan. The API enables you to access planner resources to manage planning instances and integrate them with enterprise systems. For example, you could use the API to create and manage instances of planner resources as a response to events that are external to SAS 360 Plan.
 
