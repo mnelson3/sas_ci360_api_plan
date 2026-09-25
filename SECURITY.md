@@ -1,30 +1,30 @@
 # Security Policy
 
-## Supported Branches
+## Supported Versions
 
-Security updates are prioritized for these long-lived branches:
+This repository holds a retained historical/archived reference implementation of a Python client for the SAS Customer Intelligence 360 Plan API. It has been superseded by `sas-ci360-sol-planning` and is no longer actively developed. Only the code currently deployed on each environment branch is supported — there is no long-term support for older commits.
 
-- `develop`
-- `staging`
-- `main`
+| Branch | Environment | Status |
+|---|---|---|
+| `main` | Production | Supported |
+| `staging` | Staging | Supported |
+| `develop` | Development | Supported |
 
 ## Reporting a Vulnerability
 
-Do not open public issues for suspected vulnerabilities.
+This repository doesn't have a public issue tracker, so please don't report security concerns that way. Use one of:
 
-Use one of the following private channels:
+- GitHub's [private vulnerability reporting](https://github.com/mnelson3/sas_ci360_api_plan-archived/security/advisories/new) (enabled on this repo), or
+- Email **support@nelsongrey.com**
 
-- GitHub Security Advisories: "Report a vulnerability" in this repository
-- Email fallback: `support@nelsongrey.com` with subject prefix `[Security]`
+Either way, include:
 
-Please include:
+- A description of the vulnerability and its potential impact
+- Steps to reproduce, or a proof of concept if available
+- Any relevant logs, request/response samples, or affected endpoints
 
-- Affected component(s)
-- Reproduction steps and impact
-- Suggested mitigation (if known)
+You should get an acknowledgement within a few business days.
 
-## Disclosure and Response
+## Automated Dependency Scanning
 
-- Triage acknowledgement target: within 3 business days
-- Follow-up status target: within 7 business days
-- Public disclosure should wait until a fix or mitigation is available
+Dependabot alerts and security updates, native GitHub secret scanning (with push protection), and code scanning (CodeQL) are all enabled on this repository. Avoid committing credentials or secrets regardless — credentials are supplied by the consuming application via environment variables / a secrets manager, never committed to source.
